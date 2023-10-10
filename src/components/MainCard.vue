@@ -79,10 +79,20 @@ background-color: blueviolet;
 border-radius: 25px;
 width: 62%;
 }
+.container-one ,.container-two{
+flex: 1;
+}
+@media screen and (max-width: 641px){
+    .main-container{
+        flex-direction: column;
+    }
+}
+    
+
 .container-one{
     background-color:turquoise;
     padding: 2.5%;
-    width: 40%;
+
     border-radius: 25px;
 }
  .Profile img[data-v-780197ce] {
@@ -91,8 +101,8 @@ width: 62%;
 }
 .container-two{
     background-color: rgb(143, 143, 202);
-    width: 60%;
     margin: 2.5%;
+    width: 60%;
 }
 .link a{
     text-decoration: none;
