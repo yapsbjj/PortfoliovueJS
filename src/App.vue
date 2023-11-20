@@ -1,14 +1,14 @@
 <template>
-<div>
   <MainCard/>
   <ProjectCard/>
-</div>
 
+<router-views></router-views>
 </template>
 
 <script>
 import MainCard from './components/MainCard.vue'
 import ProjectCard from './components/ProjectCard.vue'
+
 export default {
   name: 'App',
   components: {
