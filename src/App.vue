@@ -1,22 +1,19 @@
 <template>
-  <MainCard/>
-  <ProjectCard/>
+<router-view/>
 
-<router-views></router-views>
 </template>
 
 <script>
-import MainCard from './components/MainCard.vue'
-import ProjectCard from './components/ProjectCard.vue'
+
 
 export default {
   name: 'App',
   components: {
-   MainCard,
-   ProjectCard
+   
   }
 }
 </script>
+
 
 <style>
 #app {
@@ -26,5 +23,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: darkolivegreen;
 }
 </style>

@@ -3,24 +3,24 @@
  <div class="main-container">
     <div class="container-one">
         <div class="Profile">
-            <img src="../assets/image/Photo.jpg" alt="photo de moi">
+            <img src="../../assets/image/Photo.jpg" alt="photo de moi">
             <h1>Yassine Ramdane</h1>
             <p>Développer web</p>
         </div>
      <div class="link">
 
             <a :href="'https://github.com/yapsbjj'"><h2>Github</h2>
-            <img  id="photo" src="../assets/image/github-mark.png" alt="logo-github"></a>
+            <img  id="photo" src="../../assets/image/github-mark.png" alt="logo-github"></a>
         </div>
         <div class="link">
             
         <a :href="'https://www.instagram.com/yapsbjj/'"><h2>instagram</h2>
-       <img src="../assets/image/instagram.256x256.png" alt="logo-instagram"></a>
+       <img src="../../assets/image/instagram.256x256.png" alt="logo-instagram"></a>
         </div>
         <div class="link">
             
            <a :href="'https://fr.linkedin.com/in/yassine-ramdane-12845a160'"><h2>Linkedin</h2>
-        <img src='../assets/image/linkedin.256x256.png' alt="logo-linkedin"></a>
+        <img src='../../assets/image/linkedin.256x256.png' alt="logo-linkedin"></a>
         </div>
         
     </div>
@@ -34,12 +34,12 @@
                 <h1>Technologies étudiées</h1>
                 <div class="logos">
                     
-                    <img src="../assets/image/html-5-logo.219x256.png" alt="logo-html">
-                    <img src="../assets/image/css.256x246.png" alt="logo-css">
-                    <img src="../assets/image/javascript-39424.png" alt="logo-js">
+                    <img src="../../assets/image/html-5-logo.219x256.png" alt="logo-html">
+                    <img src="../../assets/image/css.256x246.png" alt="logo-css">
+                    <img src="../../assets/image/javascript-39424.png" alt="logo-js">
                     <div class="button-container">
                         <div class="project-button">
-                        <a href="#">Mes Projets</a>
+                        <router-link to="/ProjectCard">Mes Projets</router-link>
                         </div>
                         <div class="project-button">
                             <a href="https://github.com/yapsbjj/Mon-C.V">Mon C.V</a>
@@ -55,8 +55,8 @@
 
     </div>
   </div>
+  
 </div>
-<router-views></router-views>
 </template>
 
 <script>
@@ -69,6 +69,7 @@ export default {
 .wrapper{
     display: flex;
     justify-content: center;
+    background-color: darkolivegreen;
 }
 img {
     height: 20px;
@@ -96,7 +97,7 @@ flex: 1;
 
     border-radius: 25px;
 }
- .Profile img[data-v-780197ce] {
+ .Profile img {
     height: 200px;
     border-radius: 50%;
 }
