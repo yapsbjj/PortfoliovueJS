@@ -1,4 +1,5 @@
 <template>
+  <div>
   <h1>Mes projets</h1>
   <router-link to="/">Revenir à l'accueil</router-link>
   <div class="main-container">
@@ -9,28 +10,28 @@
   <div class="links">
     <a :href="projectData.ProjectArray[index].Link1" target="blank"><img src="../../assets/image/github-mark.png" alt="logo github"></a>
     <a :href="projectData.ProjectArray[index].Link2" target="blank"><img src="../../assets/image/lien.png" alt="logo liens"></a>
-    <modale></modale>
   </div>
   </div>
   </div>
   <router-link to="/">Revenir à l'accueil</router-link>
   <router-view/>
+  </div>
 </template>
 
 <script>
-import Modale from './Modale.vue';
-import jsonData from "../../components/project.json"
+
+import jsonData from "../../components/project.json";
+
 export default {
-  name: 'ProjectCard',
-  components: {
-    'modale': Modale
-  },
+ 
+  
 data(){
 return{
     projectData : jsonData 
 }
 }
-}
+
+};
 </script>
 
 <style scoped>
@@ -39,7 +40,7 @@ return{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color:darkolivegreen;
+  background-color:white;
 }
 
 .project-card{

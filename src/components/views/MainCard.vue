@@ -69,7 +69,7 @@ export default {
 .wrapper{
     display: flex;
     justify-content: center;
-    background-color: darkolivegreen;
+    background-color: white;
 }
 img {
     height: 20px;
